@@ -21,6 +21,7 @@ services:
     image: flare-bypasser:latest
     ports:
       - 20080:8080
+    restart: unless-stopped
     #volumes:
       #- ./var:/opt/flare_bypasser/var/
       #< Uncomment if you persistent logs between runs
